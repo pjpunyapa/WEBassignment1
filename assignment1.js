@@ -45,7 +45,7 @@ function randomRequest(){
 
     console.log(httpRequest(testVerbs[randVerb],testPaths[randPath]))
 }
-setInterval(randomRequest,1)
+setInterval(randomRequest,1000)
 }
 
 automateTests()
