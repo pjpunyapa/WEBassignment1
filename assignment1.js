@@ -17,7 +17,7 @@ var serverResponses= ["Welcome to WEB700 Assignment 1", "This assignment was pre
 
 //step 4
 function httpRequest(httpVerb,path){
-    for(var i =0; i < 5; i++){
+    for(var i =0; i < 6; i++){
         if(serverVerbs[i]==httpVerb && serverPaths[i]==path){
             return "200: "+serverResponses[i]
         }
@@ -40,8 +40,8 @@ var testVerbs = [ "GET", "POST"];
 var testPaths = [ "/", "/about", "/contact","/login", "/panel","/logout","/randompath1","/randompath2"];
 
 function randomRequest(){
-    randVerb = getRandomInt(0,1)
-    randPath = getRandomInt(0,7)
+    randVerb = getRandomInt(0,2)
+    randPath = getRandomInt(0,8)
 
     console.log(httpRequest(testVerbs[randVerb],testPaths[randPath]))
 }
